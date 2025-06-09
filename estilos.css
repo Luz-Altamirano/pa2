@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 1;
+  padding: 2;
+  line-height: 1.6;
+  background-color: #c084fc;
+}
+
+header {
+  background: #007BFF;
+  color: #7fffd4;;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+ nav {
+      background: #222;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+nav ul li {
+  display: inline;
+  margin: 0 1em;
+}
+
+nav a {
+  color: #f4c2c2; 
+  text-decoration: none;
+}
+
+main {
+  padding: 2em;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.galeria figure {
+  text-align: center;
+  width: 200px;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+th, td {
+  border: 1px solid #FF5722;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.animado {
+  width: 100px;
+  animation: girar 3s infinite linear;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+  margin: auto;
+}
+
+button {
+  background: #32CD32;
+  color: #40e0d0;;
+  padding: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul li {
+    display: block;
+    margin: 0.5em 0;
+  }
+  redes-sociales a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+th {
+  background-color: #7fffd4; 
+  color: #333;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+redes-sociales a:hover {
+  color: #0077cc;
+}
+.banner {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+    }
+
+}
