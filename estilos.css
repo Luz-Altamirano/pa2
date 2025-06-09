@@ -147,4 +147,22 @@ redes-sociales a:hover {
       object-fit: cover;
     }
 
+  .svg {
+    width: 150px;
+    animation: zoomInOut 2s infinite ease-in-out;
+    transform-origin: center;
+    display: block;
+    margin: auto;
+  }
+
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
 }
+
+

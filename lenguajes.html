@@ -57,9 +57,27 @@
   </section>
 
   <section>
-    <h2>Logo en SVG</h2>
-    <img src="img/Las-fases-del-desarrollo-de-una-web.jpg"" class="animado" alt="Logo lenguajes de programación animado">
-    <object type="image/svg+xml" data="svg/logo.svg"></object>
+  <h2>Logo en SVG</h2>
+  <img src="logo.svg" class="svg" alt="Logo lenguajes de programación en SVG">
+  <object type="image/svg+xml" data="logo.svg" aria-label="Logo lenguajes"></object>
+  <style>
+  .svg {
+    width: 150px;
+    animation: zoomInOut 2s infinite ease-in-out;
+    transform-origin: center;
+    display: block;
+    margin: auto;
+  }
+
+  @keyframes zoomInOut {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+      }
+  }
+</style>
   </section>
 
   <section>
